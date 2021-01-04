@@ -1,8 +1,8 @@
 # Phase3
 Here, we present the python code that has to do with NLP tasks related to biomedical text.
-## Task 1
+## Task 1: Causality Inference
 * Given a corpus of texts, that consists of abstracts and titles from papers and has to do with chemical compounds that are related to food and cosmetics industry, determine if the compound has a positive or negative relation to several adverse effects(cancer, neurotoxicity etc).
-## Task 2
+## Task 2: Named Entity Recognition
 * Given a corpus of texts, that consists of abstracts and titles and are related to food and cosmetics extract names of compounds that are not listed in our in-house dataset.
 
 ## Installation
