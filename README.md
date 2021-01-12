@@ -19,11 +19,14 @@ Here, we present the python code that has to do with NLP tasks related to biomed
     `conda install wget`
     
   ###  Python Requirements
-* torch==1.7.0
+* nltk==3.5
 * pandas==1.1.3
-* tqdm==4.53.0
 * numpy==1.18.5
+* python_Levenshtein==0.12.0
+* torch==1.7.0
 * transformers==3.5.1
+* tqdm==4.53.0
 * scikit_learn==0.24.0
+
 ## Usage
 * To execute the training process, (e.g. for task1) navigate to the phase3 folder and run: `python  scr/train.py`
