@@ -38,6 +38,13 @@ Here, we present the python code that has to do with NLP tasks related to biomed
 * tqdm==4.53.0
 * scikit_learn==0.24.0
 ## Datasets    
+Dataset must be added at the datasets folders.
+* For the causality infernce tasks the dataset must be in csv format and must be in the following format:  
+
+Sentence | Annotated_causal
+---------|-----------------
+Whatever the mechanism , active smoking is an important modifiable factor that seems to be associated with a poor response to MTX .| 1
+Data were collected on the incidence of POAF lasting more than 5 minutes and secondary outcomes , including the length of hospitalization , guideline adherence rate , adverse events , and timeliness of POAF treatment .|0
 
 Phase3  
 ├── causality_inference  
@@ -66,8 +73,5 @@ Phase3
 ├── README.md  
 └── requirements.txt  
 
-8 directories, 17 files  
-
-Dataset must ha
 ## Usage
 * To execute the training process, (e.g. for task1) navigate to the phase3 folder and run: `python  scr/train.py`
