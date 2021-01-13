@@ -41,7 +41,7 @@ Here, we present the python code that has to do with NLP tasks related to biomed
 
 Phase3  
 ├── causality_inference  
-│   ├── dataset  
+│   ├── datasets <--  
 │   ├── input  
 │   │   └── bert_base_uncased  
 │   │       ├── config.json  
@@ -55,7 +55,7 @@ Phase3
 │       ├── predict.py  
 │       └── train.py  
 ├── entity_extraction  
-│   ├── datasets  
+│   ├── datasets <--  
 │   └── src  
 │       ├── config.py  
 │       ├── dataset.py  
