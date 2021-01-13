@@ -22,8 +22,8 @@ Here, we present the python code that has to do with NLP tasks related to biomed
     `conda create -n Phase3 python=3.6.9`
   * Activate conda environment
     `conda activate Phase3`
-  * Clone github repo:
-    `git clone https://github.com/ingredio/Phase3`
+  * Clone github repo:  
+    `git clone https://github.com/ingredio/Phase3`  
     `cd Phase3`
   * Install dependencies:
     `pip3 install -r requirements.txt`
