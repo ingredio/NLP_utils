@@ -40,33 +40,33 @@ Here, we present the python code that has to do with NLP tasks related to biomed
 ## Datasets    
 
 Phase3
-├── causality_inference
-│   ├── dataset
-│   ├── input
-│   │   └── bert_base_uncased
-│   │       ├── config.json
-│   │       ├── pytorch_model.bin
-│   │       └── vocab.txt
-│   └── src
-│       ├── config.py
-│       ├── dataset.py
-│       ├── engine.py
-│       ├── model.py
-│       ├── predict.py
-│       └── train.py
-├── entity_extraction
-│   ├── datasets
-│   └── src
-│       ├── config.py
-│       ├── dataset.py
-│       ├── find_compounds.py
-│       ├── model.py
-│       ├── predict.py
-│       └── train.py
-├── README.md
-└── requirements.txt
+├── causality_inference  
+│   ├── dataset  
+│   ├── input  
+│   │   └── bert_base_uncased  
+│   │       ├── config.json  
+│   │       ├── pytorch_model.bin  
+│   │       └── vocab.txt  
+│   └── src  
+│       ├── config.py  
+│       ├── dataset.py  
+│       ├── engine.py  
+│       ├── model.py  
+│       ├── predict.py  
+│       └── train.py  
+├── entity_extraction  
+│   ├── datasets  
+│   └── src  
+│       ├── config.py  
+│       ├── dataset.py  
+│       ├── find_compounds.py  
+│       ├── model.py  
+│       ├── predict.py  
+│       └── train.py  
+├── README.md  
+└── requirements.txt  
 
-8 directories, 17 files
+8 directories, 17 files  
 
 Dataset must ha
 ## Usage
