@@ -4,7 +4,7 @@ Here, we present the python code that has to do with NLP tasks related to biomed
 * Given a corpus of texts, that consists of abstracts and titles from papers and has to do with chemical compounds that are related to food and cosmetics industry, determine if the compound has a positive or negative relation to several adverse effects(cancer, neurotoxicity etc).
  
 ## Task 2: Named Entity Recognition
-* Given a corpus of texts, that consists of abstracts and titles and are related to food and cosmetics extract names of compounds that are not listed in our in-house dataset.
+* Given a corpus of texts, that consists of abstracts and titles and are related to the food and cosmetics, extract names of compounds that are not listed in our in-house dataset.
 
 ## Installation
 ### Conda environment
@@ -37,8 +37,9 @@ Here, we present the python code that has to do with NLP tasks related to biomed
 * transformers==3.5.1
 * tqdm==4.53.0
 * scikit_learn==0.24.0
+
 ## Datasets    
-Dataset must be added at the datasets folders.
+Dataset must be added to the datasets folders.
 
 Phase3  
 ├── task1 (causality_inference)  
