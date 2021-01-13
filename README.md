@@ -39,15 +39,9 @@ Here, we present the python code that has to do with NLP tasks related to biomed
 * scikit_learn==0.24.0
 ## Datasets    
 Dataset must be added at the datasets folders.
-* For the causality infernce tasks the dataset must be in csv format and must be in the following format:  
-
-Sentence | Annotated_causal
----------|-----------------
-Whatever the mechanism , active smoking is an important modifiable factor that seems to be associated with a poor response to MTX .| 1
-Data were collected on the incidence of POAF lasting more than 5 minutes and secondary outcomes , including the length of hospitalization , guideline adherence rate , adverse events , and timeliness of POAF treatment .|0
 
 Phase3  
-├── causality_inference  
+├── task1 (causality_inference)  
 │   ├── datasets <--  
 │   ├── input  
 │   │   └── bert_base_uncased  
@@ -61,7 +55,7 @@ Phase3
 │       ├── model.py  
 │       ├── predict.py  
 │       └── train.py  
-├── entity_extraction  
+├── task2 (entity_extraction)  
 │   ├── datasets <--  
 │   └── src  
 │       ├── config.py  
@@ -73,5 +67,15 @@ Phase3
 ├── README.md  
 └── requirements.txt  
 
+* For the causality infernce tasks the dataset must be in csv format and must be in the following format:  
+
+Sentence | Annotated_causal
+---------|-----------------
+Whatever the mechanism , active smoking is an important modifiable factor that seems to be associated with a poor response to MTX .| 1
+Data were collected on the incidence of POAF lasting more than 5 minutes and secondary outcomes , including the length of hospitalization , guideline adherence rate , adverse events , and timeliness of POAF treatment .|0
+
 ## Usage
-* To execute the training process, (e.g. for task1) navigate to the phase3 folder and run: `python  scr/train.py`
+* Manage the config.py file to define training parameters like number of epochs, and cpu or gpu availability
+* To execute the training process, (e.g. for task1) navigate to the Phase3 folder and run: `python  scr/train.py`
+* Observe the resulting classfication report file at the root directory 
+* To predict `python  scr/predict.py dataset` where `dataset` should be a list of sentences.
