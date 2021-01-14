@@ -22,7 +22,7 @@ def run():
     print(*causal[:5],sep='\n')
     sys.exit()
     # causal = random.sample(causal,300)
-    
+
     train,valid = train_test_split(
         causal,
         test_size=0.1,
@@ -76,7 +76,7 @@ def run():
     )
     f = open("../classification_report.txt", "w")
     f.write("Classification Report\n")
-    
+
     best_accuracy = 0
     for epoch in range(config.EPOCHS):
         engine.train_fn(train_dataloader, model, optimizer, device, scheduler)
@@ -86,7 +86,7 @@ def run():
         outputs = [1 if x[0] else 0 for x in outputs]
         labels = [1 if x[0] > 0.5 else 0 for x in labels]
         print(metrics.classification_report(labels,outputs,[0,1]))
-        
+
         f.write('Epoch: '+ str(epoch) + '\n')
         f.write(metrics.classification_report(labels,outputs,[0,1]))
         accuracy = metrics.accuracy_score(labels, outputs)
