@@ -3,11 +3,11 @@ import numpy as np
 from tqdm import tqdm, trange
 from sklearn.model_selection import train_test_split
 import torch
-import config
+import config_task1 as config
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
 from transformers import BertForTokenClassification, AdamW, get_linear_schedule_with_warmup
-import find_compounds
+import find_compounds_task1 as find_compounds
 
 class SentenceGetter(object):
 
@@ -34,6 +34,8 @@ def create_dataset(csv_file):
     
     data.drop(['Unnamed: 0'], axis=1, inplace=True)
     data.dropna(how='any', inplace=True)
+
+    data = data.head(5000)
            
     getter = SentenceGetter(data)
     

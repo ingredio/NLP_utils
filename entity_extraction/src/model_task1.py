@@ -1,5 +1,5 @@
 from transformers import BertForTokenClassification, AdamW
-import config
+import config_task1 as config
 
 
 

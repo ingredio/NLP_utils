@@ -1,7 +1,7 @@
 import json
 import nltk
 nltk.download('punkt')
-import config
+import config_task1 as config
 import torch
 import numpy as np
 
@@ -50,6 +50,20 @@ def find_compounds(description_list,model,tag_values):
     comps_found = set()
     for token, label in zip(new_tokens, new_labels):
         if label == 1:
-          if len(token) > 1:
+          if len(token) > 3 and not token.isdigit():
             comps_found.add(token.lower())
     return comps_found
+
+#Load Ingredio DB and return all compounds
+def ingredio_DB(path):
+    with open(path, encoding="utf8") as json_file:
+        data = json.load(json_file)
+    json_file.close()
+    ingredio_dict = data['Ingredients_withFoods']
+    syns_list = []
+    for item in ingredio_dict:
+      for syn in item['compName']:
+        syns_list.append(syn)
+    return syn
+
+

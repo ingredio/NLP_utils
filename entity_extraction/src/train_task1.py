@@ -1,4 +1,4 @@
-import config
+import config_task1 as config
 import statistics
 from tqdm import tqdm, trange
 import torch
@@ -6,8 +6,8 @@ from transformers import BertForTokenClassification, AdamW, get_linear_schedule_
 import numpy as np
 from sklearn.metrics import classification_report, precision_score, f1_score
 import sys
-import dataset
-import model
+import dataset_task1 as dataset
+import model_task1 as model
 import pandas as pd
 
 #Retrieve the dataloaders created from the csv
@@ -15,9 +15,12 @@ train_dataloader,valid_dataloader,test_dataloader,tag_values, tag2idx = dataset.
 
 f = open(config.training_logs, 'a')
 ep = 1
+#Model initialization
 model = model.init_model()
+#Send model to gpu
 model.cuda();
 
+#Finetuning setup
 if config.FULL_FINETUNING:
     param_optimizer = list(model.named_parameters())
     no_decay = ['bias', 'gamma', 'beta']
@@ -50,10 +53,7 @@ loss_values, validation_loss_values = [], []
 best_precision = 0
 
 for _ in trange(config.epochs, desc="Epoch"):
-    # ========================================
     #               Training
-    # ========================================
-    # Perform one full pass over the training set.
 
     # Put the model into training mode.
     model.train()
@@ -93,10 +93,8 @@ for _ in trange(config.epochs, desc="Epoch"):
     # Store the loss value for plotting the learning curve.
     loss_values.append(avg_train_loss)
 
-
-    # ========================================
     #               Validation
-    # ========================================
+
     # After the completion of each training epoch, measure our performance on
     # our validation set.
 

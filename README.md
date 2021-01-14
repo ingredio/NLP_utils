@@ -43,6 +43,7 @@ Dataset must be added to the datasets folders.
 
 Phase3  
 ├── task1 (causality_inference)  
+<<<<<<< HEAD
 │   ├── datasets <--  
 │   ├── input  
 │   │   └── bert_base_uncased  
@@ -65,6 +66,30 @@ Phase3
 │       ├── model.py  
 │       ├── predict.py  
 │       └── train.py  
+=======
+│   ├── datasets <--  
+│   ├── input  
+│   │   └── bert_base_uncased  
+│   │       ├── config.json  
+│   │       ├── pytorch_model.bin  
+│   │       └── vocab.txt  
+│   └── src  
+│       ├── config.py  
+│       ├── dataset.py  
+│       ├── engine.py  
+│       ├── model.py  
+│       ├── predict.py  
+│       └── train.py  
+├── task2 (entity_extraction)  
+│   ├── datasets <--  
+│   └── src  
+│       ├── config.py  
+│       ├── dataset.py  
+│       ├── find_compounds.py  
+│       ├── model.py  
+│       ├── predict.py  
+│       └── train.py  
+>>>>>>> dc6bc3c475bb386c6cfde395d69aefb739da0ba4
 ├── README.md  
 └── requirements.txt  
 
@@ -80,4 +105,7 @@ Data were collected on the incidence of POAF lasting more than 5 minutes and sec
 * To execute the training process, (e.g. for task1) navigate to the Phase3 folder and run: `python  scr/train.py`
 * Observe the resulting classfication report file at the root directory 
 * To predict `python  scr/predict.py dataset` where `dataset` should be a list of sentences.
+<<<<<<< HEAD
 
+=======
+>>>>>>> dc6bc3c475bb386c6cfde395d69aefb739da0ba4
