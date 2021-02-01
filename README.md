@@ -1,6 +1,6 @@
 # Natural Language Process Utilities
 
-Here, we present the python code that has to do with NLP tasks related to biomedical text.
+Python code that has to do with NLP tasks related to biomedical text.
 ---
 ## Data Mining
 * Model that can determine whether a scientific text is correlated with chemical substances found in food and cosmetics that exhibit carcinogenicity, toxicity, irritation and allergies. The model is trained on biomedical data, using multiple machine learning algorithms. 
