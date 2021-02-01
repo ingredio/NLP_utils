@@ -89,4 +89,4 @@ The predict script first loads the trained models, the vectorizer and feature se
 
 `cat input.json | python classify.py`
 
-If all the previous steps are followed, the models would be stored in the root directory. In the input.json each line is json entry of the form `{"id": "some form of id", "abstract": "Some abstract"}` and the ouput to the standard output is lines of json entries of the form: `{"id": "some form of id", "label": "relevant", "confidenceLevel": 0.52};`
+If all the previous steps are followed, the models would be stored in the root directory. In the input.json each line is json entry of the form `{"id": "some form of id", "abstract": "Some abstract"}` and the ouput to the standard output is lines of json entries of the form: `{"id": "some form of id", "label": "relevant", "confidenceLevel": 0.52}`
