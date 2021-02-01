@@ -22,7 +22,7 @@ To solve the problem of inferring the compound toxicity, the problem is transfor
 `conda activate Phase3`
 *    Install dependencies:
 `pip3 install -r requirements.txt`
-*    Enter the `causality_infernce` folder `cd causality_infernce`
+*    Enter the `causality_infernce` folder `cd causality_inference`
 *    Download bert model and vocabulary files from this [link](https://archive.org/details/CausalySmall) and save them to input/bert_based_uncased
 
 ### Python requirements
