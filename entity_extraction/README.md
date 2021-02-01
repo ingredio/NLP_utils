@@ -51,13 +51,16 @@ PMID|Word|POS|Sentence|Tag
 ## Usage
 
 * Step 1 - Constants setup (`config_task1.py`)
+
 This file contains constant values that are used throughout the process, like paths, number of epochs, batch size etc. 
 
 * Step 2 - Data handling, Training & Evaluation
+
 `python train_task1.py`
 This script imports the training set, groups the words into sentences and applies preprocessing (BERT tokenizer, add padding or cut sentences based on the MAX_LEN value, split to train & test sets and transform to pytorch tensors). Then for each epoch it trains and evaluates BERT on those tensors in batches. Finally, it saves the best model based on the precision.
 
 
 * Step 3 - Named entity recognition
+
 `python predict_task1.py`
 Predict_task1.py loads the best model found during training. Then it imports a file that contains the json entries classified during the second phase and applies preprocessing to it. It splits the abstract into sentences, uses BERT tokenizer to tokenize the sentences and transforms them to torch tensors. It then adds a label (1 if the word is classified as a compound name and 0 if not) to each word based on the prediction. Finally it returns the words classified as compound names.

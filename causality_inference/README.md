@@ -48,13 +48,16 @@ Data were collected on the incidence of POAF lasting more than 5 minutes and sec
 
 ## Usage
 * Step 1 - Constants setup (`config.py`)
+
 This file contains constant values that are used throughout the process, like paths, number of epochs, batch size etc. 
 
 * Step 2 - Data handling, Training & Evaluation
+
 `python train.py`
 This script loads the training sets, splits it to train and validation sets and converts them to pytorch tensors. Afterwards, it loads the BERT model, its parameters and the optimizer. Finally, it trains the model for the number of epochs set in the config file and saves the best model based on the accuracy.
 
 
 * Step 3 - Causality Inference
+
 `python predict.py`
 The `predict.py` file loads the best model found during training. Then it imports a file that contains the json entries classified during the second phase and uses the BERT tokenizer to transform the sentence into numerical representation.Finally, it uses the best model to predict the causality inference of each sentence.
