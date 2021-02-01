@@ -54,32 +54,6 @@ PMID|Abstract|DOI|target
 25462712|Parabens are esters of para-hydroxybenzoic acid, with...|10.1016/j.watres.2014.09.030|1
 32605666|Remote psychophysical evaluation of olfactory and gustatory...|10.1017/S0022215120001358|0
 
-## File Structure
-root/
-│   create_trainingset.py
-│   model_evaluation.py
-│   predict.py
-│   requirements.txt
-│   training.py
-│
-├───classification_reports/
-├───classified_outputs/
-├───datasets/
-│   │   trainingset.csv
-│   │
-│   ├───irrelevant/
-│   │       irrelevant1.json
-│   │       irrelevant2.json
-│   │       irrelevant3.json
-│   │
-│   └───relevant/
-│           relevant1.json
-│           relevant2.json
-│           relevant3.json
-│
-└───dumps/
-
-
 ## Usage
 * Step 1 - Creating the training set
 `python create_trainingset.py`

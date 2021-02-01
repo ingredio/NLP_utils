@@ -46,23 +46,6 @@ Sentence|Annotated_causal
 Whatever the mechanism , active smoking is an important modifiable factor that seems to be associated with a poor response to MTX .|1
 Data were collected on the incidence of POAF lasting more than 5 minutes and secondary outcomes , including the length of hospitalization , guideline adherence rate , adverse events , and timeliness of POAF treatment .|0
 
-## File Structure
-
-root/
-├───dataset/
-├───input/
-│     bert_base_uncased/
-│   vocab.json
-│   pytorch_model.bin
-├───src
-│config.py
-│dataset.py
-│engine.py
-│model.py
-│predict.py
-└train.py
-
-
 ## Usage
 * Step 1 - Constants setup (`config.py`)
 This file contains constant values that are used throughout the process, like paths, number of epochs, batch size etc. 

@@ -48,21 +48,6 @@ PMID|Word|POS|Sentence|Tag
 1|18560757|adenosine|NN|5322|1
 2|18560757|To|TO|5322|0
 
-## File Structure
-
-├───classified_publications
-│     publications_export1.json
-│   compoundDF_BERT.csv
-│   publications.csv
-├───src
-│config_task1.py
-│dataset_task1.py
-│find_compounds_task1.py
-│model_task1.py
-│predict_task1.py
-└train_task1.py
-
-
 ## Usage
 
 * Step 1 - Constants setup (`config_task1.py`)
