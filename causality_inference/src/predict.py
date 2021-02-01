@@ -60,10 +60,8 @@ def predict(sentence):
 
 if __name__ == "__main__":
     n = len(sys.argv)
-    input_=''
-    for i in range(1, n):
-        input_ += str(sys.argv[i])
-    sentence = re.sub('[^0-9a-zA-Z]+',' ',input_)
+    input_=' '.join(sys.argv[1:])
+    sentence = re.sub('[^0-9a-zA-Z\.]+',' ',input_)
     MODEL=BERTBaseUncased()
     MODEL.load_state_dict(torch.load(config.MODEL_PATH))
     MODEL.to(DEVICE)
