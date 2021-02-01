@@ -38,7 +38,9 @@ In order for BERT to be able to extract chemical compound names from sentences a
 
 ## Dataset
 
-As a dataset for this task a CSV file is created where each line contains a word, its part of speech tag, PMID of the paper the word was found in, the index of sentence and a label that shows if each word is a compound or not. A sample of the used training set can be seen below:
+As a dataset for this task a CSV file is created where each line contains a word, its part of speech tag, PMID of the paper the word was found in, the index of sentence and a label that shows if each word is a compound or not. The dataset used can be downloaded from [here](https://drive.google.com/drive/folders/1hlnRv9GIaQSVUQeSBAkc-k8BJIDWwls7) and should exist in the root folder.
+A sample of the used training set can be seen below:
+
 
 PMID|Word|POS|Sentence|Tag
 -|-|-|-|-
