@@ -20,9 +20,7 @@ In order to classify documents to those containing useful information about chem
 `conda create -n Phase2 python=3.7.9`
 *    Activate conda environment 
 `conda activate Phase2`
-*    Clone github repo:
-`git clone https://github.com/ingredio/Phase3/data_mining`
-`cd data_mining`
+*    Enter `data_mining` folder: `cd data_mining`
 *    Install dependencies:
 `pip3 install -r requirements.txt`
 `pip3 install -U git+https://github.com/aboSamoor/polyglot.git@master`
