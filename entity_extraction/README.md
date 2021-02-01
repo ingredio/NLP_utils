@@ -22,9 +22,7 @@ In order for BERT to be able to extract chemical compound names from sentences a
 `conda create -n Phase3 python=3.7.9`
 *    Activate conda environment 
 `conda activate Phase3`
-*    Clone github repo:
-`git clone https://github.com/ingredio/Phase3/entity_extraction`
-`cd entity`
+*    Enter the `entity_extraction` folder: `cd entity entity_extraction`
 *    Install dependencies:
 `pip3 install -r requirements.txt`
 
