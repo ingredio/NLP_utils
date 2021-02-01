@@ -1,6 +1,10 @@
 # Natural Language Process Utilities
 ---
 ## NLP projects related to biomedical text.
+
+* Clone github repo: `git clone https://github.com/ingredio/Phase3`
+
+Installation instructions for each tool, are provided in their respective folders.
 ### Data Mining
 * Model that can determine whether a scientific text is correlated with chemical substances found in food and cosmetics that exhibit carcinogenicity, toxicity, irritation and allergies. The model is trained on biomedical data, using multiple machine learning algorithms. 
 ### Named Entity Recognition
