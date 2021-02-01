@@ -60,6 +60,7 @@ def predict(sentence):
 
 if __name__ == "__main__":
     n = len(sys.argv)
+    input_=''
     for i in range(1, n):
         input_ += str(sys.argv[i])
     sentence = re.sub('[^0-9a-zA-Z]+',' ',input_)
