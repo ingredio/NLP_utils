@@ -58,6 +58,6 @@ This script loads the training sets, splits it to train and validation sets and 
 
 * Step 3 - Causality Inference
 
-`python predict.py`
+`python predict.py this is some text to be processed`
 
 The `predict.py` file loads the best model found during training. Then it imports a file that contains the json entries classified during the second phase and uses the BERT tokenizer to transform the sentence into numerical representation.Finally, it uses the best model to predict the causality inference of each sentence.
