@@ -12,9 +12,10 @@ Installation instructions for each tool, are provided in their respective folder
 ### Causality Inference
 * Given a corpus of texts, that consists of abstracts and titles from papers and has to do with chemical compounds that are related to food and cosmetics industry, determine if the compound has a positive or negative relation to several adverse effects(cancer, neurotoxicity etc).
 
-### Classification process
 
-###Installation
+## Classification process
+
+### Installation
 
 * Create a new conda environment 
 `conda create -n myEnv python=3.7.9`
@@ -32,7 +33,7 @@ Installation instructions for each tool, are provided in their respective folder
 * `scikit_learn==0.23.2`
 * `tensorflow==2.4.1`
 
-The training process can be bypassed. The pretrained models, vectorizer and feature selector are provided [here](https://drive.google.com/drive/folders/1aLQkidYg-dO56aMkFZFsawwr_bcoLZqz) and should be placed in the root (NLP_utils) folder along with the `classify.py` script and `input.json` file.
+The training process can be bypassed. The pretrained models (LSVC.sav, LR.sav, SGD.sav, keras_model), vectorizer (vectorizer.pkl) and feature selector (selector.pkl) are provided [here](https://drive.google.com/drive/folders/1aLQkidYg-dO56aMkFZFsawwr_bcoLZqz) and should be placed in the root (NLP_utils) folder along with the `classify.py` script and `input.json` file.
 
 ## Usage
 `cat input.json | python classify.py`
