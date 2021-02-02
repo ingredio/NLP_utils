@@ -23,7 +23,7 @@ In order to classify documents to those containing useful information about chem
 *    Enter `data_mining` folder: `cd data_mining`
 *    Install dependencies:
 `pip3 install -r requirements.txt`
-`pip3 install -U git+https://github.com/aboSamoor/polyglot.git@master`
+`conda install -c conda-forge pyicu morfessor icu -y && pip install pycld2 polyglot`
 
 ## Python requirements
 * `keras_tuner==1.0.3`
