@@ -7,6 +7,7 @@ from tensorflow import keras
 import numpy as np
 import nltk
 import pickle
+import math
 
 def lemmatize_text(text):
     return " ".join([lemmatizer.lemmatize(w) for w in w_tokenizer.tokenize(text)])
