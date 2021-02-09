@@ -13,7 +13,7 @@ Installation instructions for each tool, are provided in their respective folder
 * Given a corpus of texts, that consists of abstracts and titles from papers and has to do with chemical compounds that are related to food and cosmetics industry, determine if the compound has a positive or negative relation to several adverse effects(cancer, neurotoxicity etc).
 
 
-## Classification process
+## Classification script (`classify.py`)
 
 ### Installation
 
